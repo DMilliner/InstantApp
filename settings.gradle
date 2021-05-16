@@ -1,0 +1,4 @@
+rootProject.name = "InstantAppTest"
+include ':app'
+include ':submodule'
+include ':dynamicSubModule'

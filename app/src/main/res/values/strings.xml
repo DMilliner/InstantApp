@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">InstantAppTest</string>
+    <string name="title_dynamicsubmodule">Dynamic Submodule Title</string>
+</resources>
