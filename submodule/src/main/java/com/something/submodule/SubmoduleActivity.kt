@@ -1,15 +1,12 @@
 package com.something.submodule
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.something.submodule.databinding.ActivtiySubmoduleBinding
 import com.google.android.gms.common.wrappers.InstantApps.isInstantApp
 import com.google.android.gms.instantapps.InstantApps
-import com.google.android.gms.tasks.Task
+import com.something.submodule.databinding.ActivtiySubmoduleBinding
 
 
 const val INSTANT_PROMPT_REQUEST_CODE = 11111
@@ -22,6 +19,11 @@ class SubmoduleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivtiySubmoduleBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // ATTENTION: This was auto-generated to handle app links.
+        val appLinkIntent = intent
+        val appLinkAction = appLinkIntent.action
+        val appLinkData = appLinkIntent.data
 
         val isInstant =  isInstantApp(this)
 
